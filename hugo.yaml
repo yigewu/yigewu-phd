@@ -137,7 +137,7 @@ params:
     title: "Yige Wu."
     subtitle: "I build things for the web"
     content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    image: /images/Professional_Headshot.jpeg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -151,8 +151,8 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/yigewu
-        - icon: fab fa-x-twitter
-          url: https://example.com
+        - icon: fab fa-linkedin
+          url: linkedin.com/in/yige-wu-5ab678a6
       customIcons:
         - icon: /fav.png
           url: "https://example.com"
@@ -379,11 +379,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/yigewu
+      linkedin: linkedin.com/in/yige-wu-5ab678a6
 
   # List pages like blogs and posts
   listPages:
