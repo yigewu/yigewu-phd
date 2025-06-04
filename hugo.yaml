@@ -1,6 +1,6 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://yigewu-phd.netlify.app/"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Yige Wu, PhD"
 theme: "hugo-profile"
 
 outputs:
