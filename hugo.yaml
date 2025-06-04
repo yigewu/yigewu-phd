@@ -1,6 +1,6 @@
 baseURL: "https://yigewu-phd.netlify.app/"
 languageCode: "en-us"
-title: "Yige Wu, PhD"
+title: "Yige Wu, PhD" # This is the name that shows in the browser tab
 theme: "hugo-profile"
 
 outputs:
@@ -59,7 +59,7 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
+  title: "Yige Wu"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
@@ -134,7 +134,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Isabella."
+    title: "Yige Wu."
     subtitle: "I build things for the web"
     content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
     image: /images/hero.svg
@@ -150,7 +150,7 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/yigewu
         - icon: fab fa-x-twitter
           url: https://example.com
       customIcons:
@@ -161,7 +161,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/Professional_Headshot.jpeg"
     content: |-
       I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
 
