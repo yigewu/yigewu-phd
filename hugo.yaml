@@ -166,10 +166,12 @@ params:
       I am a Computational Biologist specializing in cancer genomics and precision medicine. With a Ph.D. in Human Statistical Genetics and industry experience at Intellia Therapeutics, I build scalable bioinformatics pipelines to decode multi-omics data.
 
       My focus is on bridging the gap between raw sequencing data and actionable therapeutic targets. I am currently seeking Senior Scientist roles in the NJ/PA area.
-    button:
-      enable: true
-      label: "Read Full Bio"
-      url: "/about/"
+      <br>
+      <a href="/about" class="btn btn-primary text-white mt-3">Read Full Bio &rarr;</a>
+    # button:
+    #   enable: true
+    #   label: "Read Full Bio"
+    #   url: "/about/_index.md"
     skills:
       enable: true
       title: "Core Competencies:"
