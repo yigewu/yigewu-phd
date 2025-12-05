@@ -136,7 +136,7 @@ params:
     intro: "Hi, my name is"
     title: "Yige Wu."
     subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    content: "a computational biology expert specializing in cancer genomics and bioinformatics."
     image: /images/Professional_Headshot.jpeg
     bottomImage:
       enable: true
