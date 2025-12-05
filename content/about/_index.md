@@ -3,7 +3,25 @@ title: "About"
 date: 2025-01-01T00:00:00Z
 draft: false
 ---
-
+<style>
+    /* Force the content container to be wider */
+    .container {
+        max-width: 100% !important; /* Uses more screen space */
+    }
+    
+    /* The theme likely wraps content in a restricted column (often col-lg-8). 
+       This forces it to use the full grid width. */
+    .col-lg-8 {
+        flex: 0 0 90% !important;
+        max-width: 90% !important;
+    }
+    
+    /* Optional: Add some padding so it doesn't touch the exact edge of the screen */
+    .section {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+</style>
 ## The Short Version
 
 I am a **Computational Biologist** with a Ph.D. in Human Statistical Genetics and industry experience in immuno-oncology. My work focuses on constructing scalable bioinformatics pipelines and integrating complex multi-omics data to uncover therapeutic targets in cancer.
