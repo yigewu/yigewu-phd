@@ -8,7 +8,7 @@ draft: false
 
 I am a **Computational Biologist** with a Ph.D. in Human Statistical Genetics and industry experience in immuno-oncology. My work focuses on constructing scalable bioinformatics pipelines and integrating complex multi-omics data to uncover therapeutic targets in cancer.
 
-Currently, I am seeking **Senior Scientist** roles in the **Boston/Cambridge** biotech hub, where I can apply my expertise in single-cell genomics and cloud computing to precision medicine challenges.
+Currently, I am seeking **Senior Scientist** roles in the **NJ/PA** area, where I can apply my expertise in single-cell genomics and cloud computing to precision medicine challenges.
 
 ## My Philosophy: From Raw Reads to Biological Truth
 
@@ -32,7 +32,7 @@ Biology is getting bigger. I architect solutions that scale from a single sample
 
 My toolkit is built to solve problems across the entire data lifecycle:
 
-- **Data Analysis & Statistics:** R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.
+-**Data Analysis & Statistics:** R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.
     
 - **Pipeline Engineering:** Nextflow, Snakemake, Docker, Git.
     
@@ -66,4 +66,4 @@ I am always interested in discussing new challenges in **biomarker discovery**, 
 
 If you are looking for a collaborator who can speak both the languages of computer science and biology, please reach out.
 
-[<i class="fas fa-envelope"></i> Email Me](mailto:your.email@example.com "null")  |  [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/yourprofile "null")  |  [<i class="fas fa-file-alt"></i> Download CV](https://www.google.com/search?q=/files/My_CV.pdf "null")
+[<i class="fas fa-envelope"></i> Email Me](mailto:yigewu.app@gmail.com "null")  |  [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/yourprofile "null")  |  [<i class="fas fa-file-alt"></i> Download CV](https://www.google.com/search?q=/files/My_CV.pdf "null")
