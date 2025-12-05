@@ -30,20 +30,16 @@ markup:
 
 Menus:
   main:
-    - identifier: "about"
-      name: "About"
-      url: "/about/"
-      weight: 10
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -161,25 +157,31 @@ params:
         - icon: /fav.png
           url: "https://example.com"
 
-  # # About
-  # about:
-  #   enable: true
-  #   title: "About Me"
-  #   image: "/images/Professional_Headshot.jpeg"
-  #   content: |-
-  #     I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
-  # 
-  #     I am currently working on a project that will be used to help people find the best way to get around the city.
-  #   skills:
-  #     enable: true
-  #     title: "Here are a few technologies I've been working with recently:"
-  #     items:
-  #       - "HTML"
-  #       - "CSS"
-  #       - "JavaScript"
-  #       - "React"
-  #       - "Node"
-  #       - "Express"
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/Professional_Headshot.jpeg"
+    content: |-
+      I am a Computational Biologist specializing in cancer genomics and precision medicine. With a Ph.D. in Human Statistical Genetics and industry experience at Intellia Therapeutics, I build scalable bioinformatics pipelines to decode multi-omics data.
+
+      My focus is on bridging the gap between raw sequencing data and actionable therapeutic targets. I am currently seeking Senior Scientist roles in the Boston/Cambridge biotech hub.
+    # --- ADD THIS SECTION ---
+    button:
+      enable: true
+      label: "Read Full Bio"
+      url: "/about/"
+    # ------------------------
+    skills:
+      enable: true
+      title: "Core Competencies:"
+      items:
+        - "R / Bioconductor"
+        - "Python"
+        - "Docker"
+        - "Single-cell (scRNA/snATAC)"
+        - "AWS / Google Cloud"
+        - "Multi-omics Integration"
 
   # Experience
   experience:
@@ -289,27 +291,27 @@ params:
           enable: true
           url: "https://example.com"
 
-  # Achievements
-  achievements:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+  # # Achievements
+  # achievements:
+  #   enable: true
+  #   # title: "Custom Name"
+  #   items:
+  #     - title: Google kickstart runner
+  #       content: I solved all problems with optimal solution.
+  #       url: https://example.com
+  #       image: /images/achievement.jpg
+  #     - title: Facebook Hackathon Winner
+  #       content: Developed a product using Artificial Intelligence.
+  #       image: /images/achievement.jpg
+  #     - title: Hugo Profile
+  #       content: Developed a theme and getting 1K+ downloads per month.
+  #       url: "https://github.com/gurusabarish/hugo-profile"
+  #       image: /images/achievement.jpg
+  #     - title: Microsoft Imagine Runner
+  #       content: We are developed a product which can help others.
+  #     - title: Google Summer of Code
+  #       content: Contributed to a open source project.
+  #       url: https://example.com
 
   # projects
   projects:
