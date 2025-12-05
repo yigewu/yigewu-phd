@@ -115,7 +115,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    brandName: "Yige Wu, PhD" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -166,12 +166,10 @@ params:
       I am a Computational Biologist specializing in cancer genomics and precision medicine. With a Ph.D. in Human Statistical Genetics and industry experience at Intellia Therapeutics, I build scalable bioinformatics pipelines to decode multi-omics data.
 
       My focus is on bridging the gap between raw sequencing data and actionable therapeutic targets. I am currently seeking Senior Scientist roles in the Boston/Cambridge biotech hub.
-    # --- ADD THIS SECTION ---
-    button:
-      enable: true
-      label: "Read Full Bio"
-      url: "/about/"
-    # ------------------------
+    # button:
+    #   enable: true
+    #   label: "Read Full Bio"
+    #   url: "/about/"
     skills:
       enable: true
       title: "Core Competencies:"
