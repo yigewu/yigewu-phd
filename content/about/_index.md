@@ -50,7 +50,7 @@ Biology is getting bigger. I architect solutions that scale from a single sample
 
 My toolkit is built to solve problems across the entire data lifecycle:
 
--**Data Analysis & Statistics:** R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.
+- **Data Analysis & Statistics:** R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.
     
 - **Pipeline Engineering:** Nextflow, Snakemake, Docker, Git.
     
@@ -84,4 +84,4 @@ I am always interested in discussing new challenges in **biomarker discovery**, 
 
 If you are looking for a collaborator who can speak both the languages of computer science and biology, please reach out.
 
-[<i class="fas fa-envelope"></i> Email Me](mailto:yigewu.app@gmail.com "null")  |  [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/yourprofile "null")  |  [<i class="fas fa-file-alt"></i> Download CV](https://www.google.com/search?q=/files/My_CV.pdf "null")
+[<i class="fas fa-envelope"></i> Email Me](mailto:yigewu.app@gmail.com "null")  |  [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/yige-wu-5ab678a6 "null")  |  [<i class="fas fa-file-alt"></i> Download CV](https://www.google.com/search?q=/files/My_CV.pdf "null")

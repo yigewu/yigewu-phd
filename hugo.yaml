@@ -152,7 +152,7 @@ params:
         - icon: fab fa-github
           url: https://github.com/yigewu
         - icon: fab fa-linkedin
-          url: linkedin.com/in/yige-wu-5ab678a6
+          url: https://linkedin.com/in/yige-wu-5ab678a6
       customIcons:
         - icon: /fav.png
           url: "https://example.com"
