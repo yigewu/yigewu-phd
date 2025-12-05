@@ -21,6 +21,18 @@ draft: false
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
+    
+    /* --- 2. Fix Bullet Points --- */
+    /* This forces the text inside list items to stay inline with the bullet */
+    .content ul li p {
+        display: inline;
+        margin: 0;
+    }
+    
+    /* Ensures the list item handles the bullet correctly */
+    .content ul li {
+        margin-bottom: 0.5rem; /* Adds a little space between bullets */
+    }
 </style>
 ## The Short Version
 
@@ -51,11 +63,8 @@ Biology is getting bigger. I architect solutions that scale from a single sample
 My toolkit is built to solve problems across the entire data lifecycle:
 
 - **Data Analysis & Statistics:** R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.
-    
 - **Pipeline Engineering:** Nextflow, Snakemake, Docker, Git.
-    
 - **Cloud Infrastructure:** AWS (EC2/S3/Batch), Google Cloud Platform.
-    
 - **Genomics Focus:** Single-cell transcriptomics, Spatial transcriptomics, Somatic/Germline variant calling (CNV/SNV).
     
 
@@ -70,9 +79,7 @@ Most recently, as a **Computational Scientist at Intellia Therapeutics**, I engi
 My foundation was built at **Washington University in St. Louis**, where I completed my Ph.D. My doctoral work focused on:
 
 - Pioneering multimodal data analysis of **clear cell renal cell carcinomas (ccRCC)**.
-    
 - Constructing somatic CNV pipelines for large-scale cancer genomics.
-    
 - Validating rare germline CNVs using cloud-based architectures.
     
 
