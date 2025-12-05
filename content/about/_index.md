@@ -4,26 +4,66 @@ date: 2025-01-01T00:00:00Z
 draft: false
 ---
 
-Summary
--------
+## The Short Version
 
-I am a computational biologist with a PhD in Human Statistical Genetics (Washington University in St. Louis) and industry experience at Intellia Therapeutics. My work focuses on multi-omics integration, biomarker discovery, and scalable bioinformatics pipelines to support precision medicine and immune-oncology research.
+I am a **Computational Biologist** with a Ph.D. in Human Statistical Genetics and industry experience in immuno-oncology. My work focuses on constructing scalable bioinformatics pipelines and integrating complex multi-omics data to uncover therapeutic targets in cancer.
 
-Core competencies
------------------
-- Programming: R, Python, Shell, Linux, MATLAB, C++, Conda, parallel computing
-- Bioinformatics: NGS (exome/genome), somatic/germline variant calling, CNV detection, scRNA-seq, snATAC-seq, spatial transcriptomics, proteomics/metabolomics
-- Data analysis: Statistical modeling, machine learning, multimodal integration, visualization
-- Pipelines & DevOps: Reproducible workflows, cloud (AWS/GCP), Docker, Git
-- Leadership: Project management, mentoring, cross-functional collaboration
-- Communication: Scientific writing, presentations, technical documentation
+Currently, I am seeking **Senior Scientist** roles in the **Boston/Cambridge** biotech hub, where I can apply my expertise in single-cell genomics and cloud computing to precision medicine challenges.
 
-Experience highlights
----------------------
-- Computational Scientist, Intellia Therapeutics (01/2023 – 01/2025): engineered scalable pipelines for single-cell and bulk RNA-seq; led multi-omics analyses to inform research goals.
-- Postdoctoral Research Associate & PhD, Washington University in St. Louis (2016–2023): developed CNV and proteogenomics pipelines; contributed to large-scale multi-institution studies and high-impact publications.
+## My Philosophy: From Raw Reads to Biological Truth
 
-Contact
--------
-- Email: [yigewu.app@gmail.com](mailto:yigewu.app@gmail.com)
-- LinkedIn: https://linkedin.com/in/yige-wu-5ab678a6
+In computational biology, running the tool is the easy part. The real challenge—and where I find my passion—lies in distinguishing biological signal from technical noise.
+
+Throughout my time at **Intellia Therapeutics** and **Washington University**, I have developed a problem-solving framework based on three pillars:
+
+### 1. Reproducibility is Non-Negotiable
+
+I don't just write scripts for today; I build workflows for the future. Whether it is containerizing a pipeline with **Docker** or managing workflows with **Nextflow**, I ensure that my analyses are robust, version-controlled, and reproducible by anyone on the team, independent of the computing environment.
+
+### 2. Context is King
+
+Data without biological context is just numbers. My background in **Human Statistical Genetics** allows me to look at data through a rigorous statistical lens, but my focus is always on the biological outcome. I specialize in integrating disparate data modalities—like **scRNA-seq, snATAC-seq, and spatial transcriptomics**—to reconstruct the tumor microenvironment in high definition.
+
+### 3. Scalability by Design
+
+Biology is getting bigger. I architect solutions that scale from a single sample to thousands. My experience building cloud-based pipelines on **AWS** and **Google Cloud** ensures that computational bottlenecks never slow down biological discovery.
+
+## Technical Expertise
+
+My toolkit is built to solve problems across the entire data lifecycle:
+
+- **Data Analysis & Statistics:** R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.
+    
+- **Pipeline Engineering:** Nextflow, Snakemake, Docker, Git.
+    
+- **Cloud Infrastructure:** AWS (EC2/S3/Batch), Google Cloud Platform.
+    
+- **Genomics Focus:** Single-cell transcriptomics, Spatial transcriptomics, Somatic/Germline variant calling (CNV/SNV).
+    
+
+## My Journey
+
+### Industry Impact
+
+Most recently, as a **Computational Scientist at Intellia Therapeutics**, I engineered scalable pipelines for bulk and single-cell RNA-seq. I spearheaded multi-omics analyses that provided critical insights into the tumor microenvironment, directly supporting cross-functional teams in making data-driven decisions.
+
+### Academic Roots
+
+My foundation was built at **Washington University in St. Louis**, where I completed my Ph.D. My doctoral work focused on:
+
+- Pioneering multimodal data analysis of **clear cell renal cell carcinomas (ccRCC)**.
+    
+- Constructing somatic CNV pipelines for large-scale cancer genomics.
+    
+- Validating rare germline CNVs using cloud-based architectures.
+    
+
+This work contributed to publications in _Nature Communications_, _Cancer Cell_, and _Cell_, as well as a U.S. Patent application for novel cancer treatment methods.
+
+## Let's Connect
+
+I am always interested in discussing new challenges in **biomarker discovery**, **CRISPR/Cas9 therapy support**, and **multi-omics integration**.
+
+If you are looking for a collaborator who can speak both the languages of computer science and biology, please reach out.
+
+[<i class="fas fa-envelope"></i> Email Me](mailto:your.email@example.com "null")  |  [<i class="fab fa-linkedin"></i> LinkedIn](https://linkedin.com/in/yourprofile "null")  |  [<i class="fas fa-file-alt"></i> Download CV](https://www.google.com/search?q=/files/My_CV.pdf "null")

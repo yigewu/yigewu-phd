@@ -168,10 +168,6 @@ params:
       My focus is on bridging the gap between raw sequencing data and actionable therapeutic targets. I am currently seeking Senior Scientist roles in the NJ/PA area.
       <br>
       <a href="/about" class="btn btn-primary text-white mt-3">Read Full Bio &rarr;</a>
-    # button:
-    #   enable: true
-    #   label: "Read Full Bio"
-    #   url: "/about/_index.md"
     skills:
       enable: true
       title: "Core Competencies:"
