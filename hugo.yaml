@@ -35,11 +35,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -165,11 +165,11 @@ params:
     content: |-
       I am a Computational Biologist specializing in cancer genomics and precision medicine. With a Ph.D. in Human Statistical Genetics and industry experience at Intellia Therapeutics, I build scalable bioinformatics pipelines to decode multi-omics data.
 
-      My focus is on bridging the gap between raw sequencing data and actionable therapeutic targets. I am currently seeking Senior Scientist roles in the Boston/Cambridge biotech hub.
-    # button:
-    #   enable: true
-    #   label: "Read Full Bio"
-    #   url: "/about/"
+      My focus is on bridging the gap between raw sequencing data and actionable therapeutic targets. I am currently seeking Senior Scientist roles in the NJ/PA area.
+    button:
+      enable: true
+      label: "Read Full Bio"
+      url: "/about/"
     skills:
       enable: true
       title: "Core Competencies:"
