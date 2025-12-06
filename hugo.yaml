@@ -297,14 +297,14 @@ params:
         image: /images/projects/profile.png
         featured:
           name: "Read Case Study"
-          link: "/blogs/kidney-cancer-omics"
+          link: "/blogs/2025-12-06-kidney-cancer-multi-omics"
         badges:
           - "R"
           - "scRNA-seq"
           - "Multi-omics"
         links:
-          # - icon: fa fa-envelope
-          #   url: https://github.com/yigewu/ccRCC_sn_publication
+          - icon: fa fa-envelope
+            url: https://www.nature.com/articles/s41467-023-37211-7
           - icon: fab fa-github
             url: https://github.com/yigewu/ccRCC_sn_publication
 
