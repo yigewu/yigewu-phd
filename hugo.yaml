@@ -184,44 +184,41 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      - job: "Computational Scientist"
+        company: "Intellia Therapeutics"
+        companyUrl: "https://www.intelliatx.com/"
+        date: "2023 - 2025"
+        # featuredLink:
+        #   enable: true
+        #   name: "View the project"
+        #   url: "https://example.com"
+        content: |
+          - Engineered scalable bioinformatics pipelines for single-cell data.
+          - Spearheaded multi-omics analyses for tumor microenvironment contexture.
 
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+      - job: "Postdoctoral Research Associate"
+        company: "Ding lab at WASHINGTON UNIVERSITY IN ST. LOUIS"
+        companyUrl: "https://dinglab.wustl.edu/"
+        date: "May 2022 - Jan 2023"
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
         info:
           enable: true
-          content: I worked as a software developer for more than one year in Amazon.
+          content: I worked as a postdoc for 6 months at WashU.
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          - Investigated novel drug combination efficacy using patient-derived xenograft models for renal cancer.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
+      - job: "PhD Student"
+        company: "Ding lab at WASHINGTON UNIVERSITY IN ST. LOUIS"
+        companyUrl: "https://dinglab.wustl.edu/"
+        date: "Sep 2016 - May 2022"
         info:
           enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
           - Lead backend developer for a product.
           - Created a frontend design for a product.
 
@@ -233,16 +230,12 @@ params:
           enable: true
           url: "https://example.com"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+          - Constructed somatic CNV pipeline, processing 1,300+ the Clinical Proteomic Tumor Analysis Consortium (CPTAC) cases across seven cancer types. (project code: https://github.com/ding-lab/BICSEQ2)
+          - Architected cloud-based pipelines, validating rare germline copy number variations (CNVs) across 10,389 tumors for The Cancer Genome Atlas (TCGA). (project code:https://github.com/yigewu/xhmm_google_cloud )
+          - Pioneered multimodal data analysis (genomics, proteomics, epigenetics) of clear cell renal cell carcinomas (ccRCC), revealing tumor heterogeneity and therapeutic targets. (project code:https://github.com/yigewu/ccRCC_sn_publication )
+          - Spearheaded large-scale collaborative study, coordinating 30+ team members across 150+ conferences.
+          - Established mutational impact analysis pipeline for proteome studies in Cell publications.
+          - Secured U.S. Patent application for cancer treatment methods (Patent 17/231,273).
 
   # Education
   education:
@@ -281,6 +274,7 @@ params:
       - title: "Bachelor of Science in Psychology"
         school:
           name: "PEKING UNIVERSITY"
+        date: "2013 - 2016"
 
   # # Achievements
   # achievements:
