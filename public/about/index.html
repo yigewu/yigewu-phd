@@ -28,17 +28,17 @@
 
 
 
-<meta property="og:url" content="http://localhost:4321/categories/">
+<meta property="og:url" content="http://localhost:4321/about/">
   <meta property="og:site_name" content="Yige Wu, PhD">
-  <meta property="og:title" content="Categories">
-  <meta property="og:description" content="Text about my cool site">
+  <meta property="og:title" content="About">
+  <meta property="og:description" content="The Short Version I am a Computational Biologist with a Ph.D. in Human Statistical Genetics and industry experience in immuno-oncology. My work focuses on constructing scalable bioinformatics pipelines and integrating complex multi-omics data to uncover therapeutic targets in cancer.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
-  <meta name="twitter:description" content="Text about my cool site">
+  <meta name="twitter:title" content="About">
+  <meta name="twitter:description" content="The Short Version I am a Computational Biologist with a Ph.D. in Human Statistical Genetics and industry experience in immuno-oncology. My work focuses on constructing scalable bioinformatics pipelines and integrating complex multi-omics data to uncover therapeutic targets in cancer.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -102,15 +102,18 @@
 
 
 
-<meta name="description" content="Categories of Yige Wu, PhD">
-<link rel="stylesheet" href="/css/list.css" media="all">
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/about.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
 
   
   
 
   <title>
-Categories | Yige Wu, PhD
+About | Yige Wu, PhD
 
   </title>
 </head>
@@ -295,37 +298,112 @@ Categories | Yige Wu, PhD
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Categories</h2>
-    <div class="row">
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card-columns">
-                <div class="card h-100">
-                    
-                    <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/categories/r/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="R">R</h5>
-                        </a>
-                        <div class="card-text secondary-font">
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 1, 2020</span>
-                        <a href="/categories/r/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                    </div>
+<section id="single">
+    <div class="container">
+        <div class="title mb-3">
+            <h1 class="text-center mb-4">About</h1>
+        </div>
+        <div class="row justify-content-center">
+            
+
+            <div class="col-sm-12 col-md-12 col-lg-6 pt-4 p-2">
+                <div class="pr-lg-4">
+                    <article class="page-content p-2">
+                        <style>
+    /* Force the content container to be wider */
+    .container {
+        max-width: 100% !important; /* Uses more screen space */
+    }
+    
+    /* The theme likely wraps content in a restricted column (often col-lg-8). 
+       This forces it to use the full grid width. */
+    .col-lg-8 {
+        flex: 0 0 90% !important;
+        max-width: 90% !important;
+    }
+    
+    /* Optional: Add some padding so it doesn't touch the exact edge of the screen */
+    .section {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    
+    /* --- 2. Fix Bullet Points --- */
+    /* This forces the text inside list items to stay inline with the bullet */
+    .content ul li p {
+        display: inline;
+        margin: 0;
+    }
+    
+    /* Ensures the list item handles the bullet correctly */
+    .content ul li {
+        margin-bottom: 0.5rem; /* Adds a little space between bullets */
+    }
+</style>
+<h2 id="the-short-version">The Short Version</h2>
+<p>I am a <strong>Computational Biologist</strong> with a Ph.D. in Human Statistical Genetics and industry experience in immuno-oncology. My work focuses on constructing scalable bioinformatics pipelines and integrating complex multi-omics data to uncover therapeutic targets in cancer.</p>
+<p>Currently, I am seeking <strong>Senior Scientist</strong> roles in the <strong>NJ/PA</strong> area, where I can apply my expertise in single-cell genomics and cloud computing to precision medicine challenges.</p>
+<h2 id="my-philosophy-from-raw-reads-to-biological-truth">My Philosophy: From Raw Reads to Biological Truth</h2>
+<p>In computational biology, running the tool is the easy part. The real challenge—and where I find my passion—lies in distinguishing biological signal from technical noise.</p>
+<p>Throughout my time at <strong>Intellia Therapeutics</strong> and <strong>Washington University</strong>, I have developed a problem-solving framework based on three pillars:</p>
+<h3 id="1-reproducibility-is-non-negotiable">1. Reproducibility is Non-Negotiable</h3>
+<p>I don&rsquo;t just write scripts for today; I build workflows for the future. Whether it is containerizing a pipeline with <strong>Docker</strong> or managing workflows with <strong>Nextflow</strong>, I ensure that my analyses are robust, version-controlled, and reproducible by anyone on the team, independent of the computing environment.</p>
+<h3 id="2-context-is-king">2. Context is King</h3>
+<p>Data without biological context is just numbers. My background in <strong>Human Statistical Genetics</strong> allows me to look at data through a rigorous statistical lens, but my focus is always on the biological outcome. I specialize in integrating disparate data modalities—like <strong>scRNA-seq, snATAC-seq, and spatial transcriptomics</strong>—to reconstruct the tumor microenvironment in high definition.</p>
+<h3 id="3-scalability-by-design">3. Scalability by Design</h3>
+<p>Biology is getting bigger. I architect solutions that scale from a single sample to thousands. My experience building cloud-based pipelines on <strong>AWS</strong> and <strong>Google Cloud</strong> ensures that computational bottlenecks never slow down biological discovery.</p>
+<h2 id="technical-expertise">Technical Expertise</h2>
+<p>My toolkit is built to solve problems across the entire data lifecycle:</p>
+<ul>
+<li><strong>Data Analysis &amp; Statistics:</strong> R (Bioconductor), Python (Pandas/Scikit-learn), MATLAB.</li>
+<li><strong>Pipeline Engineering:</strong> Nextflow, Snakemake, Docker, Git.</li>
+<li><strong>Cloud Infrastructure:</strong> AWS (EC2/S3/Batch), Google Cloud Platform.</li>
+<li><strong>Genomics Focus:</strong> Single-cell transcriptomics, Spatial transcriptomics, Somatic/Germline variant calling (CNV/SNV).</li>
+</ul>
+<h2 id="my-journey">My Journey</h2>
+<h3 id="industry-impact">Industry Impact</h3>
+<p>Most recently, as a <strong>Computational Scientist at Intellia Therapeutics</strong>, I engineered scalable pipelines for bulk and single-cell RNA-seq. I spearheaded multi-omics analyses that provided critical insights into the tumor microenvironment, directly supporting cross-functional teams in making data-driven decisions.</p>
+<h3 id="academic-roots">Academic Roots</h3>
+<p>My foundation was built at <strong>Washington University in St. Louis</strong>, where I completed my Ph.D. My doctoral work focused on:</p>
+<ul>
+<li>Pioneering multimodal data analysis of <strong>clear cell renal cell carcinomas (ccRCC)</strong>.</li>
+<li>Constructing somatic CNV pipelines for large-scale cancer genomics.</li>
+<li>Validating rare germline CNVs using cloud-based architectures.</li>
+</ul>
+<p>This work contributed to publications in <em>Nature Communications</em>, <em>Cancer Cell</em>, and <em>Cell</em>, as well as a U.S. Patent application for novel cancer treatment methods.</p>
+<h2 id="lets-connect">Let&rsquo;s Connect</h2>
+<p>I am always interested in discussing new challenges in <strong>biomarker discovery</strong>, <strong>CRISPR/Cas9 therapy support</strong>, and <strong>multi-omics integration</strong>.</p>
+<p>If you are looking for a collaborator who can speak both the languages of computer science and biology, please reach out.</p>
+<p><a href="mailto:yigewu.app@gmail.com" title="null"><i class="fas fa-envelope"></i> Email Me</a>  |  <a href="https://linkedin.com/in/yige-wu-5ab678a6" title="null"><i class="fab fa-linkedin"></i> LinkedIn</a>  |  <a href="https://www.google.com/search?q=/files/My_CV.pdf" title="null"><i class="fas fa-file-alt"></i> Download CV</a></p>
+
+                    </article>
                 </div>
             </div>
         </div>
-        
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
-            </div>
-        </div>
     </div>
-</div>
+    <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+        <i class="fas fa-angle-up"></i>
+    </button>
+</section>
+
+<script>
+    var topScroll = document.getElementById("topScroll");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topScroll.style.display = "block";
+        } else {
+            topScroll.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 
   </div><footer>
     

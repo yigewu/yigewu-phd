@@ -3,52 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:4321/blogs/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/example/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>http://localhost:4321/blogs/2025-12-06-combination-therapy-study-in-rcc/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/blogs/2025-12-06-kidney-cancer-multi-omics/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/blogs/2025-12-06-variant-calling-pipeline/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/tags/markdown-syntax/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/mathjax/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blogs/math/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>http://localhost:4321/about/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/gallery/</loc>
     <lastmod>2022-06-25T18:35:46+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blogs/markdown-syntax/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/sample/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blogs/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blogs/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blogs/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
   </url><url>
     <loc>http://localhost:4321/categories/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
@@ -69,6 +42,9 @@
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/tags/regression/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url>
 </urlset>

@@ -135,8 +135,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Yige Wu."
-    subtitle: "I build things for the web"
-    content: "a computational biology expert specializing in cancer genomics and bioinformatics."
+    subtitle: ""
+    content: "I am a computational biology expert specializing in cancer genomics and bioinformatics."
     image: /images/Professional_Headshot.jpeg
     bottomImage:
       enable: true
@@ -293,7 +293,7 @@ params:
     # title: "Custom Name"
     items:
       - title: Kidney Cancer Multi-Omics
-        content: Unraveling the Complexity of Kidney Cancer using scRNA-seq and snATAC-seq.
+        content: Unraveling the Complexity of Kidney Cancer using snRNA-seq and snATAC-seq.
         image: /images/projects/profile.png
         featured:
           name: "Read Case Study"
@@ -309,7 +309,7 @@ params:
             url: https://github.com/yigewu/ccRCC_sn_publication
 
       - title: Variant Calling Pipeline
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        content: A cloud-native pipeline for somatic CNV detection, processing 1,300+ the Clinical Proteomic Tumor Analysis Consortium (CPTAC) cases across seven cancer types.
         image: /images/projects/converter.jpg
         featured:
           name: "Read Case Study"
@@ -317,12 +317,12 @@ params:
         # badges:
         #   - "Django"
         #   - "Bootstrap"
-        # links:
-        #   - icon: fab fa-github
-        #     url: https://github.com/gurusabarish/converter
+        links:
+          - icon: fab fa-github
+            url: https://github.com/ding-lab/BICSEQ2
 
       - title: Combination Therapy Study in RCC
-        content: A clean and simple Hugo template for personal portfolio and blog.
+        content: Investigating novel drug combination efficacy using patient-derived xenograft models for renal cancer using single-nucleus transcriptomics and bulk RNA-seq integration.
         image: /images/projects/profile2.jpg
         featured:
           name: "Read Case Study"
