@@ -303,37 +303,37 @@ params:
           - "scRNA-seq"
           - "Multi-omics"
         links:
-          - icon: fa fa-envelope
-            url: https://github.com/yigewu/ccRCC_sn_publication
+          # - icon: fa fa-envelope
+          #   url: https://github.com/yigewu/ccRCC_sn_publication
           - icon: fab fa-github
             url: https://github.com/yigewu/ccRCC_sn_publication
 
-      - title: Image Converter
+      - title: Variant Calling Pipeline
         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
         image: /images/projects/converter.jpg
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          name: "Read Case Study"
+          link: "/blogs/2025-12-06-variant-calling-pipeline"
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/converter
 
-      - title: Hugo Profile V2
+      - title: Combination Therapy Study in RCC
         content: A clean and simple Hugo template for personal portfolio and blog.
         image: /images/projects/profile2.jpg
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+          name: "Read Case Study"
+          link: "/blogs/2025-12-06-combination-therapy-study-in-rcc"
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
