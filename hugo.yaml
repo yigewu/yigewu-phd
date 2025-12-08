@@ -323,7 +323,7 @@ params:
 
       - title: Combination Therapy Study in RCC
         content: Investigating novel drug combination efficacy using patient-derived xenograft models for renal cancer using single-nucleus transcriptomics and bulk RNA-seq integration.
-        image: /images/projects/profile2.jpg
+        image: /images/projects/combo/cabo_resl5.png
         featured:
           name: "Read Case Study"
           link: "/blogs/2025-12-06-combination-therapy-study-in-rcc"
