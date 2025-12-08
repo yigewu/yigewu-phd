@@ -161,7 +161,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/Professional_Headshot.jpeg"
+    image: "/images/wordcloud.png"
     content: |-
       I am a Computational Biologist specializing in cancer genomics and precision medicine. With a Ph.D. in Human Statistical Genetics and industry experience at Intellia Therapeutics, I build scalable bioinformatics pipelines to decode multi-omics data.
 
@@ -294,7 +294,7 @@ params:
     items:
       - title: Kidney Cancer Multi-Omics
         content: Unraveling the Complexity of Kidney Cancer using snRNA-seq and snATAC-seq.
-        image: /images/projects/profile.png
+        image: /images/projects/ccrcc_snrna/sn_umap.png
         featured:
           name: "Read Case Study"
           link: "/blogs/2025-12-06-kidney-cancer-multi-omics"
