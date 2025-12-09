@@ -144,7 +144,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/files/Yige_Wu_Resume_Dec2025.pdf" # <--- Points to static/files/
+      url: /files/Yige_Wu_Resume_Dec2025.pdf
       download: true
       newPage: false
     socialLinks:
