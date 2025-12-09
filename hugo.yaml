@@ -328,12 +328,12 @@ params:
         featured:
           name: "Read Case Study"
           link: "/blogs/2025-12-09-obsidian-plugin"
-      # badges:
-      #   - "Django"
-      #   - "Bootstrap"
-      links:
-        - icon: fab fa-github
-          url: https://github.com/yglow/obsidian-connectmore
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/yglow/obsidian-connectmore
         
       # - title: Variant Calling Pipeline
       #   content: A cloud-native pipeline for somatic CNV detection, processing 1,300+ the Clinical Proteomic Tumor Analysis Consortium (CPTAC) cases across seven cancer types.
