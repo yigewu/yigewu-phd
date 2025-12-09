@@ -13,6 +13,7 @@ toc: ~
 A custom Personal Relationship Management (PRM) tool built for the Obsidian knowledge base. This plugin automates the ingestion of contact data to streamline professional networking and job search tracking.
 
 **Role:** Solo Developer
+
 **Tech Stack:** TypeScript, JavaScript, NodeJS, Obsidian API, GitHub Copilot.
 **Repository:** https://github.com/yglow/obsidian-connectmore
 

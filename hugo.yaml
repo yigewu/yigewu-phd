@@ -144,18 +144,18 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/files/Yige_Wu_Resume_Dec2025.pdf" # <--- Points to static/files/
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/yigewu
         - icon: fab fa-linkedin
           url: https://linkedin.com/in/yige-wu-5ab678a6
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+        - icon: fab fa-github
+          url: https://github.com/yigewu
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
@@ -205,7 +205,6 @@ params:
         #   url: "https://example.com"
         info:
           enable: true
-          content: I worked as a postdoc for 6 months at WashU.
         content: |
           - Investigated novel drug combination efficacy using patient-derived xenograft models for renal cancer.
 
@@ -303,7 +302,7 @@ params:
           - "scRNA-seq"
           - "Multi-omics"
         links:
-          - icon: fa fa-envelope
+          - icon: fas fa-external-link-alt
             url: https://www.nature.com/articles/s41467-023-37211-7
           - icon: fab fa-github
             url: https://github.com/yigewu/ccRCC_sn_publication
@@ -319,7 +318,7 @@ params:
         #   - "Bootstrap"
         #   - "Javascript"
         links:
-          - icon: fa fa-envelope
+          - icon: fas fa-external-link-alt
             url: https://doi.org/10.1158/0008-5472.CAN-23-0604
       
       - title: Connectmore (Obsidian Plugin)
@@ -328,9 +327,10 @@ params:
         featured:
           name: "Read Case Study"
           link: "/blogs/2025-12-09-obsidian-plugin"
-        # badges:
-        #   - "Django"
-        #   - "Bootstrap"
+        badges:
+          - "TypeScript"
+          - "Obsidian API"
+          - "AI Workflow"
         links:
           - icon: fab fa-github
             url: https://github.com/yglow/obsidian-connectmore
@@ -354,7 +354,7 @@ params:
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    btnLink: mailto:yigewu.app@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -371,7 +371,7 @@ params:
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/yigewu
-      linkedin: linkedin.com/in/yige-wu-5ab678a6
+      linkedin: https://www.linkedin.com/in/yige-wu-5ab678a6
 
   # List pages like blogs and posts
   listPages:
