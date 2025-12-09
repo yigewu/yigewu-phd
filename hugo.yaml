@@ -308,6 +308,33 @@ params:
           - icon: fab fa-github
             url: https://github.com/yigewu/ccRCC_sn_publication
 
+      - title: Combination Therapy Study in RCC
+        content: Investigating novel drug combination efficacy using patient-derived xenograft models for renal cancer using single-nucleus transcriptomics and bulk RNA-seq integration.
+        image: /images/projects/combo/cabo_resl5.png
+        featured:
+          name: "Read Case Study"
+          link: "/blogs/2025-12-06-combination-therapy-study-in-rcc"
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: https://doi.org/10.1158/0008-5472.CAN-23-0604
+      
+      - title: Connectmore (Obsidian Plugin)
+        content: A custom Personal Relationship Management (PRM) tool built for the Obsidian knowledge base.
+        image: /images/projects/converter.jpg
+        featured:
+          name: "Read Case Study"
+          link: "/blogs/2025-12-09-obsidian-plugin"
+      # badges:
+      #   - "Django"
+      #   - "Bootstrap"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/yglow/obsidian-connectmore
+        
       # - title: Variant Calling Pipeline
       #   content: A cloud-native pipeline for somatic CNV detection, processing 1,300+ the Clinical Proteomic Tumor Analysis Consortium (CPTAC) cases across seven cancer types.
       #   image: /images/projects/converter.jpg
@@ -320,20 +347,6 @@ params:
         # links:
         #   - icon: fab fa-github
         #     url: https://github.com/ding-lab/BICSEQ2
-
-      - title: Combination Therapy Study in RCC
-        content: Investigating novel drug combination efficacy using patient-derived xenograft models for renal cancer using single-nucleus transcriptomics and bulk RNA-seq integration.
-        image: /images/projects/combo/cabo_resl5.png
-        featured:
-          name: "Read Case Study"
-          link: "/blogs/2025-12-06-combination-therapy-study-in-rcc"
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
-        # links:
-        #   - icon: fab fa-github
-        #     url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:

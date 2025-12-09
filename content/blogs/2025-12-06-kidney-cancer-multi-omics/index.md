@@ -30,3 +30,4 @@ I designed and executed a multi-omics integration strategy involving over 30 pri
 * **Regulatory Mechanism:** Discovered that the transcription factor **KLF9** regulates CP expression via specific binding motifs in open promoter regions accessible only in tumor cells.
 * **Microenvironment Impact:** Spatial analysis revealed CP enrichment in hyalinized stroma, suggesting a mechanism for tumor-stroma interaction and a potential route for disrupting the tumor niche.
 
+[📄 Read the Full Publication in Nature Communications](https://www.nature.com/articles/s41467-023-37211-7)

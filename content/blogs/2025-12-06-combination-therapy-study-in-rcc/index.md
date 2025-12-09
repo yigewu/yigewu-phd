@@ -29,4 +29,5 @@ While targeted therapies like Cabozantinib are standard care for metastatic RCC,
 * **Mechanism of Action:** Found that adding Sapanisertib to Cabozantinib effectively suppresses **pERK levels**, preventing the pathway reactivation often seen in drug resistance.
 * **Biomarker Identification:** Identified that **baseline MET protein levels** negatively correlate with Cabozantinib response, establishing low MET as a potential predictive biomarker for treatment sensitivity.
 
+[📄 Read the Full Publication in Cancer Research](https://doi.org/10.1158/0008-5472.CAN-23-0604)
 
