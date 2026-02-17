@@ -6,28 +6,42 @@
     <description>Recent content in Blogs on Yige Wu, PhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:4321/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Combination Therapy Study in RCC</title>
-      <link>http://localhost:4321/blogs/2025-12-06-combination-therapy-study-in-rcc/</link>
-      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blogs/2025-12-06-combination-therapy-study-in-rcc/</guid>
-      <description></description>
+      <title>Forensics on the Filesystem: Identifying Unannotated FASTQ Data</title>
+      <link>http://localhost:4321/blogs/unannotated-fastq-forensics/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/blogs/unannotated-fastq-forensics/</guid>
+      <description>&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;&#xA;&lt;p&gt;In a recent technical discussion, I tackled a practical data hygiene problem: You are handed a raw, unannotated FASTQ file with no metadata. Is it RNA-seq (transcriptomic) or DNA-seq (genomic)?&lt;/p&gt;&#xA;&lt;p&gt;Running a full alignment on a multi-gigabyte file just to check the data type is computationally wasteful. We need a heuristic to determine the identity quickly.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-biological-insight&#34;&gt;The Biological Insight&lt;/h3&gt;&#xA;&lt;p&gt;The key difference lies in the physical origins of the fragments.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Kidney Cancer Multi-Omics</title>
+      <title>ConnectMore (Obsidian Plugin)</title>
+      <link>http://localhost:4321/blogs/2025-12-09-obsidian-plugin/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/blogs/2025-12-09-obsidian-plugin/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&#xA;A custom Personal Relationship Management (PRM) tool built for the Obsidian knowledge base. This plugin automates the ingestion of contact data to streamline professional networking and job search tracking.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Solo Developer&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tech Stack:&lt;/strong&gt; TypeScript, JavaScript, NodeJS, Obsidian API, GitHub Copilot.&#xA;&lt;strong&gt;Repository:&lt;/strong&gt; &lt;a href=&#34;https://github.com/yglow/obsidian-connectmore&#34;&gt;https://github.com/yglow/obsidian-connectmore&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h4&gt;&#xA;&lt;p&gt;During my active job search, I needed a way to centralize hundreds of professional contacts from phone logs, email, and LinkedIn into a secure, local-first database (Obsidian). Manually creating files for each contact was inefficient and prone to data entry errors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deciphering Tumor Heterogeneity via Single-Nucleus Multi-Omics</title>
       <link>http://localhost:4321/blogs/2025-12-06-kidney-cancer-multi-omics/</link>
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/blogs/2025-12-06-kidney-cancer-multi-omics/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&#xA;A comprehensive investigation into the cellular architecture of clear cell Renal Cell Carcinoma (ccRCC) using integrated single-nucleus RNA-seq (snRNA-seq), snATAC-seq, and bulk proteomics. This study aimed to overcome the limitations of bulk sequencing to identify granular tumor-specific markers and regulatory mechanisms.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;My Role:&lt;/strong&gt; Lead Bioinformatics Scientist &amp;amp; Project Lead&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tech Stack:&lt;/strong&gt; R (Seurat, Harmony), Python, Unix, High-Performance Computing (HPC).&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;&#xA;&lt;p&gt;Standard bulk sequencing obscures the signals of distinct cell populations within the tumor microenvironment. We needed to map the complex ecosystem of 13+ epithelial cell types, immune cells, and stromal support cells to understand why certain tumors resist treatment and identify novel therapeutic targets.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Optimizing Combination Therapies in Drug-Resistant RCC</title>
+      <link>http://localhost:4321/blogs/2025-12-06-combination-therapy-study-in-rcc/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/blogs/2025-12-06-combination-therapy-study-in-rcc/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&#xA;A translational study utilizing Patient-Derived Xenograft (PDX) models to evaluate the efficacy of combining Cabozantinib (VEGFR/MET/AXL inhibitor) with Sapanisertib (mTORC1/2 inhibitor).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;My Role:&lt;/strong&gt; Computational Biologist &amp;amp; Statistical Analyst&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tech Stack:&lt;/strong&gt; Differential Expression Analysis, Survival Analysis, Pathway Enrichment (GSEA), Correlation Analysis.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;&#xA;&lt;p&gt;While targeted therapies like Cabozantinib are standard care for metastatic RCC, resistance eventually develops. Patients who fail first-line therapies have limited options. We hypothesized that targeting both the VEGF/MET axis and the mTOR pathway simultaneously could overcome intrinsic resistance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Variant Calling Pipeline</title>
       <link>http://localhost:4321/blogs/2025-12-06-variant-calling-pipeline/</link>
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/blogs/2025-12-06-variant-calling-pipeline/</guid>
-      <description></description>
+      <description>&lt;p&gt;Coming soon&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
