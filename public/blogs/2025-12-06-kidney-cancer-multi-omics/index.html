@@ -30,8 +30,11 @@
 
 <meta property="og:url" content="http://localhost:4321/blogs/2025-12-06-kidney-cancer-multi-omics/">
   <meta property="og:site_name" content="Yige Wu, PhD">
-  <meta property="og:title" content="Kidney Cancer Multi-Omics">
-  <meta property="og:description" content="Text about my cool site">
+  <meta property="og:title" content="Deciphering Tumor Heterogeneity via Single-Nucleus Multi-Omics">
+  <meta property="og:description" content="Summary: A comprehensive investigation into the cellular architecture of clear cell Renal Cell Carcinoma (ccRCC) using integrated single-nucleus RNA-seq (snRNA-seq), snATAC-seq, and bulk proteomics. This study aimed to overcome the limitations of bulk sequencing to identify granular tumor-specific markers and regulatory mechanisms.
+My Role: Lead Bioinformatics Scientist &amp; Project Lead
+Tech Stack: R (Seurat, Harmony), Python, Unix, High-Performance Computing (HPC).
+The Challenge Standard bulk sequencing obscures the signals of distinct cell populations within the tumor microenvironment. We needed to map the complex ecosystem of 13&#43; epithelial cell types, immune cells, and stromal support cells to understand why certain tumors resist treatment and identify novel therapeutic targets.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blogs">
@@ -40,8 +43,11 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kidney Cancer Multi-Omics">
-  <meta name="twitter:description" content="Text about my cool site">
+  <meta name="twitter:title" content="Deciphering Tumor Heterogeneity via Single-Nucleus Multi-Omics">
+  <meta name="twitter:description" content="Summary: A comprehensive investigation into the cellular architecture of clear cell Renal Cell Carcinoma (ccRCC) using integrated single-nucleus RNA-seq (snRNA-seq), snATAC-seq, and bulk proteomics. This study aimed to overcome the limitations of bulk sequencing to identify granular tumor-specific markers and regulatory mechanisms.
+My Role: Lead Bioinformatics Scientist &amp; Project Lead
+Tech Stack: R (Seurat, Harmony), Python, Unix, High-Performance Computing (HPC).
+The Challenge Standard bulk sequencing obscures the signals of distinct cell populations within the tumor microenvironment. We needed to map the complex ecosystem of 13&#43; epithelial cell types, immune cells, and stromal support cells to understand why certain tumors resist treatment and identify novel therapeutic targets.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -116,7 +122,7 @@
   
 
   <title>
-Kidney Cancer Multi-Omics | Yige Wu, PhD
+Deciphering Tumor Heterogeneity via Single-Nucleus Multi-Omics | Yige Wu, PhD
 
   </title>
 </head>
@@ -307,10 +313,10 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Kidney Cancer Multi-Omics</h1>
+            <h1 class="text-center mb-4">Deciphering Tumor Heterogeneity via Single-Nucleus Multi-Omics</h1>
             <div class="text-center">
               
-                Package Build
+                Yige Wu
                 <small>|</small>
               
               Dec 6, 2025
@@ -324,7 +330,27 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
           </div>
           
           <article class="page-content  p-2">
-          
+          <p><strong>Summary:</strong>
+A comprehensive investigation into the cellular architecture of clear cell Renal Cell Carcinoma (ccRCC) using integrated single-nucleus RNA-seq (snRNA-seq), snATAC-seq, and bulk proteomics. This study aimed to overcome the limitations of bulk sequencing to identify granular tumor-specific markers and regulatory mechanisms.</p>
+<p><strong>My Role:</strong> Lead Bioinformatics Scientist &amp; Project Lead</p>
+<p><strong>Tech Stack:</strong> R (Seurat, Harmony), Python, Unix, High-Performance Computing (HPC).</p>
+<h3 id="the-challenge">The Challenge</h3>
+<p>Standard bulk sequencing obscures the signals of distinct cell populations within the tumor microenvironment. We needed to map the complex ecosystem of 13+ epithelial cell types, immune cells, and stromal support cells to understand why certain tumors resist treatment and identify novel therapeutic targets.</p>
+<h3 id="the-solution">The Solution</h3>
+<p>I designed and executed a multi-omics integration strategy involving over 30 primary tumor cases.</p>
+<ul>
+<li><strong>Pipeline Development:</strong> Engineered reproducible bioinformatics pipelines to process raw FASTQ data, performing QC, dimensionality reduction (UMAP), and batch correction (Harmony).</li>
+<li><strong>Integration:</strong> Developed a framework to map transcriptomic data (snRNA-seq) with chromatin accessibility data (snATAC-seq) and proteomic layers.</li>
+<li><strong>Target Identification:</strong> Screened for surface-localized proteins that showed differential expression in tumor vs. normal cells and differential chromatin accessibility.</li>
+</ul>
+<h3 id="key-findings">Key Findings</h3>
+<ul>
+<li><strong>Novel Biomarker Discovery:</strong> Identified <strong>Ceruloplasmin (CP)</strong> as a robust tumor-specific marker. Validated that high CP expression correlates with poor patient prognosis in large external cohorts (CPTAC).</li>
+<li><strong>Regulatory Mechanism:</strong> Discovered that the transcription factor <strong>KLF9</strong> regulates CP expression via specific binding motifs in open promoter regions accessible only in tumor cells.</li>
+<li><strong>Microenvironment Impact:</strong> Spatial analysis revealed CP enrichment in hyalinized stroma, suggesting a mechanism for tumor-stroma interaction and a potential route for disrupting the tumor niche.</li>
+</ul>
+<p><a href="https://www.nature.com/articles/s41467-023-37211-7">📄 Read the Full Publication in Nature Communications</a></p>
+
           </article>
         </div>
       </div>
@@ -336,7 +362,17 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
                 Table Of Contents
               </h5>
               <div class="toc-content">
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-challenge">The Challenge</a></li>
+        <li><a href="#the-solution">The Solution</a></li>
+        <li><a href="#key-findings">Key Findings</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
               </div>
           </aside>
           
@@ -354,17 +390,17 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Kidney%20Cancer%20Multi-Omics&url=http%3a%2f%2flocalhost%3a4321%2fblogs%2f2025-12-06-kidney-cancer-multi-omics%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Deciphering%20Tumor%20Heterogeneity%20via%20Single-Nucleus%20Multi-Omics&url=http%3a%2f%2flocalhost%3a4321%2fblogs%2f2025-12-06-kidney-cancer-multi-omics%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Kidney%20Cancer%20Multi-Omics: http%3a%2f%2flocalhost%3a4321%2fblogs%2f2025-12-06-kidney-cancer-multi-omics%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Deciphering%20Tumor%20Heterogeneity%20via%20Single-Nucleus%20Multi-Omics: http%3a%2f%2flocalhost%3a4321%2fblogs%2f2025-12-06-kidney-cancer-multi-omics%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Kidney%20Cancer%20Multi-Omics&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a4321%2fblogs%2f2025-12-06-kidney-cancer-multi-omics%2f'>
+                  <a target="_blank" href='mailto:?subject=Deciphering%20Tumor%20Heterogeneity%20via%20Single-Nucleus%20Multi-Omics&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a4321%2fblogs%2f2025-12-06-kidney-cancer-multi-omics%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -443,16 +479,39 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
             <div class="card h-100">
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/2025-12-06-combination-therapy-study-in-rcc/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Combination Therapy Study in RCC">Combination Therapy Study …</h5>
+                    <a href="/blogs/unannotated-fastq-forensics/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Forensics on the Filesystem: Identifying Unannotated FASTQ Data">Forensics on the …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p></p>
+                        <p><h3 id="the-challenge">The Challenge</h3>
+<p>In a recent technical discussion, I tackled a practical data hygiene problem: You are handed a raw, unannotated FASTQ file with no metadata. Is it RNA-seq (transcriptomic) or DNA-seq (genomic)?</p>
+<p>Running a full alignment on a multi-gigabyte file just to check the data type is …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 6, 2025</span>
-                    <a href="/blogs/2025-12-06-combination-therapy-study-in-rcc/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    <span class="float-start">Feb 17, 2026</span>
+                    <a href="/blogs/unannotated-fastq-forensics/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/2025-12-09-obsidian-plugin/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="ConnectMore (Obsidian Plugin)">ConnectMore (Obsidian …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p><strong>Summary:</strong>
+A custom Personal Relationship Management (PRM) tool built for the Obsidian knowledge base. This plugin automates the ingestion of contact data to streamline professional networking and job search tracking.</p>
+<p><strong>Role:</strong> Solo Developer</p>
+<p><strong>Tech Stack:</strong> TypeScript, JavaScript, NodeJS, Obsidian API, …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Dec 9, 2025</span>
+                    <a href="/blogs/2025-12-09-obsidian-plugin/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
@@ -462,33 +521,16 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/2025-12-06-kidney-cancer-multi-omics/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Kidney Cancer Multi-Omics">Kidney Cancer Multi-Omics</h5>
+                        <h5 class="card-title bg-transparent" title="Deciphering Tumor Heterogeneity via Single-Nucleus Multi-Omics">Deciphering Tumor …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p></p>
+                        <p><p><strong>Summary:</strong>
+A comprehensive investigation into the cellular architecture of clear cell Renal Cell Carcinoma (ccRCC) using integrated single-nucleus RNA-seq (snRNA-seq), snATAC-seq, and bulk proteomics. This study aimed to overcome the limitations of bulk sequencing to identify granular tumor-specific …</p></p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
                     <span class="float-start">Dec 6, 2025</span>
                     <a href="/blogs/2025-12-06-kidney-cancer-multi-omics/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/2025-12-06-variant-calling-pipeline/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Variant Calling Pipeline">Variant Calling Pipeline</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 6, 2025</span>
-                    <a href="/blogs/2025-12-06-variant-calling-pipeline/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
@@ -526,7 +568,7 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
 
     
     <span class="px-1">
-        <a href="linkedin.com/in/yige-wu-5ab678a6" aria-label="linkedin">
+        <a href="https://www.linkedin.com/in/yige-wu-5ab678a6" aria-label="linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
                 viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#0077b5" rx="15%" />
@@ -554,7 +596,7 @@ Kidney Cancer Multi-Omics | Yige Wu, PhD
                     </a>
                 </div>
             
-            &copy; 2025  All rights reserved
+            &copy; 2026  All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
