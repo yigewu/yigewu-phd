@@ -28,17 +28,26 @@
 
 
 
-<meta property="og:url" content="http://localhost:4321/404.html">
+<meta property="og:url" content="http://localhost:4321/blogs/erbb2-toxicity-screening/">
   <meta property="og:site_name" content="Yige Wu, PhD">
-  <meta property="og:title" content="404 Page not found">
-  <meta property="og:description" content="Text about my cool site">
+  <meta property="og:title" content="The Trap of 1D Target Screening: Why Abundance Doesn&#39;t Predict Toxicity">
+  <meta property="og:description" content="The Challenge During a recent technical discussion regarding on-target, off-tumor toxicity, we evaluated ERBB2 (HER2) as a case study. The standard practice in bioinformatics is to screen out targets with high normal-tissue expression using databases like GTEx (for RNA) or the Human Protein Atlas (for Protein).
+However, looking at the GTEx RNA-seq data, ERBB2 is highly abundant in the gastrointestinal tract (esophagus) and urinary bladder. Yet, the most famous, dose-limiting toxicities for HER2-targeted therapies (like Trastuzumab) are Cardiotoxicity and Interstitial Lung Disease (ILD)—tissues with comparatively unremarkable baseline RNA expression.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blogs">
+    <meta property="article:published_time" content="2026-02-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-19T00:00:00+00:00">
+    <meta property="article:tag" content="ERBB2">
+    <meta property="article:tag" content="Transcriptomics">
+    <meta property="article:tag" content="Proteomics">
+    <meta property="article:tag" content="Toxicity">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="404 Page not found">
-  <meta name="twitter:description" content="Text about my cool site">
+  <meta name="twitter:title" content="The Trap of 1D Target Screening: Why Abundance Doesn&#39;t Predict Toxicity">
+  <meta name="twitter:description" content="The Challenge During a recent technical discussion regarding on-target, off-tumor toxicity, we evaluated ERBB2 (HER2) as a case study. The standard practice in bioinformatics is to screen out targets with high normal-tissue expression using databases like GTEx (for RNA) or the Human Protein Atlas (for Protein).
+However, looking at the GTEx RNA-seq data, ERBB2 is highly abundant in the gastrointestinal tract (esophagus) and urinary bladder. Yet, the most famous, dose-limiting toxicities for HER2-targeted therapies (like Trastuzumab) are Cardiotoxicity and Interstitial Lung Disease (ILD)—tissues with comparatively unremarkable baseline RNA expression.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -102,14 +111,18 @@
 
 
 
-<meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
 
   
   
 
   <title>
-Yige Wu, PhD | Page not found
+The Trap of 1D Target Screening: Why Abundance Doesn&#39;t Predict Toxicity | Yige Wu, PhD
 
   </title>
 </head>
@@ -294,10 +307,179 @@ Yige Wu, PhD | Page not found
     </nav>
 </header>
 <div id="content">
-<div class="container py-5 text-center">
-    <img src="/404.png" alt='Page not found' class="img-fluid" width="40%">
-    <h1>Page not found</h1>
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">The Trap of 1D Target Screening: Why Abundance Doesn&#39;t Predict Toxicity</h1>
+            <div class="text-center">
+              
+              Feb 19, 2026
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <h3 id="the-challenge">The Challenge</h3>
+<p>During a recent technical discussion regarding on-target, off-tumor toxicity, we evaluated <em>ERBB2</em> (HER2) as a case study. The standard practice in bioinformatics is to screen out targets with high normal-tissue expression using databases like GTEx (for RNA) or the Human Protein Atlas (for Protein).</p>
+<p>However, looking at the GTEx RNA-seq data, <em>ERBB2</em> is highly abundant in the gastrointestinal tract (esophagus) and urinary bladder. Yet, the most famous, dose-limiting toxicities for HER2-targeted therapies (like Trastuzumab) are Cardiotoxicity and Interstitial Lung Disease (ILD)—tissues with comparatively unremarkable baseline RNA expression.</p>
+<p><img src="/images/projects/erbb2_rna_expression_hpa.png" alt="Figure 1: ERBB2 RNA Expression Across Normal Tissues. This bar chart, adapted from the Human Protein Atlas consensus dataset, shows normalized transcript per million (nTPM) values for ERBB2. Note the highest expression in the esophagus and kidney, with unremarkable levels in the heart muscle and lung."></p>
+<h3 id="the-insight-abundance-does-not-equal-essentiality">The Insight: Abundance Does Not Equal Essentiality</h3>
+<p>A common hypothesis is that post-transcriptional regulation causes this discrepancy, and that checking the protein-level data will resolve it. But evaluating the mass-spectrometry/IHC data reveals a different story: protein expression for <em>ERBB2</em> is broadly &ldquo;Medium&rdquo; across many healthy tissues that never suffer severe toxicity.</p>
+<p><img src="/images/projects/erbb2_protein_expression_hpa.png" alt="Figure 2: ERBB2 Protein Expression Across Normal Tissues. This overview from the Human Protein Atlas scores protein expression levels (Not detected, Low, Medium, High) based on immunohistochemistry. While showing functional protein in the heart and lung, it also indicates &ldquo;Medium&rdquo; expression in many tissues that do not suffer severe clinical toxicity, demonstrating that protein abundance alone is not a precise predictor of functional dependency."></p>
+<p>The missing variable isn&rsquo;t the <em>modality</em> of the data (RNA vs. Protein); it is the <strong>biological context</strong>.</p>
+<p>Toxicity is driven by <strong>functional dependency</strong>, not just target density. In the adult heart, ERBB2 acts as a critical co-receptor in the Neuregulin-1 (NRG-1) signaling pathway. Cardiomyocytes rely heavily on this exact pathway to survive physiological and oxidative stress. Blocking it removes their primary survival lifeline, leading to apoptosis and heart failure.</p>
+<p>The esophagus might have a higher absolute abundance of ERBB2 protein, but its cells do not rely on it as an exclusive survival mechanism the way the heart does.</p>
+<h3 id="the-computational-solution">The Computational Solution</h3>
+<p>We cannot predict drug safety simply by setting a maximum expression threshold (a &ldquo;cutoff&rdquo;) in GTEx or CPTAC. To truly predict off-tumor effects for CAR-Ts and ADCs, our computational pipelines must move from 1D expression screening to multidimensional dependency screening.</p>
+<p>We must integrate normal tissue expression data with:</p>
+<ol>
+<li><strong>Tissue-specific Protein-Protein Interaction (PPI) networks.</strong></li>
+<li><strong>Cell-type specific survival pathway analysis</strong> (matching target expression to known stress-response pathways in essential organs).</li>
+</ol>
+<p>By mapping both <em>where</em> a target is expressed and <em>how much the tissue relies on it</em>, we can avoid clinical surprises that basic abundance metrics miss.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-challenge">The Challenge</a></li>
+        <li><a href="#the-insight-abundance-does-not-equal-essentiality">The Insight: Abundance Does Not Equal Essentiality</a></li>
+        <li><a href="#the-computational-solution">The Computational Solution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="http://localhost:4321/tags/erbb2"
+                target="_blank"
+              >ERBB2</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:4321/tags/transcriptomics"
+                target="_blank"
+              >Transcriptomics</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:4321/tags/proteomics"
+                target="_blank"
+              >Proteomics</a></li>
+              
+              <li class="list-inline-item"><a href="http://localhost:4321/tags/toxicity"
+                target="_blank"
+              >Toxicity</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a4321%2fblogs%2ferbb2-toxicity-screening%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=The%20Trap%20of%201D%20Target%20Screening%3a%20Why%20Abundance%20Doesn%27t%20Predict%20Toxicity&url=http%3a%2f%2flocalhost%3a4321%2fblogs%2ferbb2-toxicity-screening%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=The%20Trap%20of%201D%20Target%20Screening%3a%20Why%20Abundance%20Doesn%27t%20Predict%20Toxicity: http%3a%2f%2flocalhost%3a4321%2fblogs%2ferbb2-toxicity-screening%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=The%20Trap%20of%201D%20Target%20Screening%3a%20Why%20Abundance%20Doesn%27t%20Predict%20Toxicity&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a4321%2fblogs%2ferbb2-toxicity-screening%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
 
   </div><footer>
     
