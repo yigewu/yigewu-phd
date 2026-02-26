@@ -1,6 +1,6 @@
 ---
 title: "Forensics on the Filesystem: Identifying Unannotated FASTQ Data"
-date: '2026-02-17'
+date: '2026-02-26'
 slug: unannotated-fastq-forensics
 math: true
 categories:
@@ -10,36 +10,68 @@ tags:
   - RNA-seq
   - DNA-seq
   - QC
+  - CLI Tools
 ---
 
-### The Challenge
+## The Challenge
 
 In a recent technical discussion, I tackled a practical data hygiene problem: You are handed a raw, unannotated FASTQ file with no metadata. Is it RNA-seq (transcriptomic) or DNA-seq (genomic)?
 
 Running a full alignment on a multi-gigabyte file just to check the data type is computationally wasteful. We need a heuristic to determine the identity quickly.
 
-### The Biological Insight
+------------------------------------------------------------------------
 
-The key difference lies in the physical origins of the fragments.
+## The Naive Assumption: The "Splice" Trap
 
-* **DNA-seq (WGS):** Fragments come from the entire genome, covering both coding (exons) and non-coding (introns) regions roughly equally.
-* **RNA-seq:** Fragments are derived from mature mRNA. This creates a distinct biological signature: high exonic coverage, near-zero intronic coverage, and—crucially—reads that span across splice junctions.
+The textbook biological difference is obvious. Whole Genome Sequencing (WGS) DNA covers coding and non-coding regions equally, while RNA-seq derives from mature mRNA. Therefore, RNA-seq should have distinct reads spanning across splice junctions.
 
-![Figure: Unspliced and spliced alignment. Figure from Van den Berge et al. (2019).](/images/projects/splicedAlignment.png)
+My initial hypothesis was to subsample 100,000 reads, run a fast splice-aware alignment, and parse the resulting CIGAR strings for large `N` gaps (introns).
 
-### The Proposed Algorithm
+However, when I put this to the test on ground-truth public datasets, the empirical results completely contradicted the theory. The known RNA-seq files showed a dismal splice detection rate (hovering around 1%), while the known WGS DNA files sometimes showed an artificially *higher* splice rate (over 5% depending on the filtering parameters).
 
-To solve this without burning compute resources, I devised a "Sample & Check" pipeline:
+While I haven't rigorously profiled the underlying C++ mechanics of the aligner to prove this, I strongly suspect this failure stems from two computational realities of short-read *de novo* alignment: \* **Hypothesis 1: The RNA Soft-Clipping Penalty.** It is highly probable that fast aligners mapping 100-bp reads mathematically prefer to "soft-clip" the ends of a read rather than open a massive intronic gap, hiding the true splice signal entirely. \* **Hypothesis 2: The DNA Hallucination.** When WGS DNA is forced into a splice-aware alignment without a restrictive annotation file, the algorithm likely searches desperately for homology. It may "hallucinate" massive gaps to force off-target repeats and pseudogenes to map, creating a high false-positive splice rate.
 
-1.  **Subsample:** Extract the first 10,000 reads (sufficient for a statistical signal).
-2.  **Quick Map:** Align this subset to a reference genome.
-3.  **The Decision Matrix:** Check two specific metrics to classify the file.
+------------------------------------------------------------------------
 
-| Metric | Whole Genome DNA | Exome Capture (DNA) | RNA-seq |
-| :--- | :--- | :--- | :--- |
-| **Exon/Intron Ratio** | &approx; 1:1 (Balanced) | High (Mostly Exons) | High (Mostly Exons) |
-| **Splice Junctions** | Absent | Absent | **Present** |
+## The Pivot: The Transcriptome Mapping Rate
 
-### Conclusion
+Since parsing CIGAR strings proved computationally unreliable for this use case, I pivoted to a more robust heuristic: measuring *where* reads map, rather than *how* they map.
 
-The presence of "gapped alignments" (reads split across introns) is the definitive "smoking gun" that distinguishes RNA-seq from Exome capture DNA. This heuristic allows for rapid classification of legacy data lakes without manual curation.
+By mapping a subset of reads exclusively against a lightweight transcriptome FASTA (\~35MB) using `minimap2`, we bypass the 3GB genomic noise entirely:
+
+| Metric | WGS DNA-seq | RNA-seq |
+|:-----------------------|:-----------------------|:-----------------------|
+| **Target Reference** | 3GB Full Genome | \~35MB Protein-Coding Transcriptome |
+| **Mapping Rate** | **\< 30%** (Noise floor) | **\> 60%** (Target signal) |
+
+------------------------------------------------------------------------
+
+## The "Battle Scars": Empirical Validation
+
+Theory is great, but biology is messy. During initial empirical validation using Cancer Cell Line Encyclopedia (CCLE) datasets, I ran into a significant anomaly: WGS mapping rates for aneuploid cancer cell lines were spiking to nearly 50%.
+
+I suspected the issue was **Transcriptome Bloat**. Standard transcriptome references (like GENCODE's comprehensive release) contain tens of thousands of long non-coding RNAs (lncRNAs) and transcripts with retained introns. My working hypothesis was that the highly amplified, shattered genomes of the CCLE cell lines were flooding these non-coding reference regions.
+
+**The Fix:** To test this theory, I restricted the reference strictly to the **Protein-Coding Transcriptome**. The result confirmed the approach: the WGS noise floor instantly collapsed back down to the 15% - 25% range, while the RNA-seq target signal remained strong at \> 60%. This created a robust, undeniable classification canyon.
+
+------------------------------------------------------------------------
+
+## The Open-Source Solution: SeqSniffer
+
+To automate this pipeline, I built **SeqSniffer**—a fast, open-source CLI tool that streams `minimap2` alignments directly into memory. It classifies FASTQ files in seconds without writing heavy temporary files to your disk.
+
+You can try it out immediately. The repository includes an automated script to fetch the highly optimized protein-coding reference and public test data.
+
+``` bash
+# Clone the repository
+git clone [https://github.com/yigewu/SeqSniffer.git](https://github.com/yigewu/SeqSniffer.git)
+cd SeqSniffer
+
+# Create the environment and fetch test data
+conda env create -f environment.yml
+conda activate seqsniffer
+./get_test_data.sh
+
+# Sniff your files
+./seqsniffer.py --input test_data/test_dna.fastq --ref test_data/transcriptome.fa
+```
