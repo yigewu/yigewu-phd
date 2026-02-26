@@ -2,6 +2,7 @@
 title: "The Trap of 1D Target Screening: Why Abundance Doesn't Predict Toxicity"
 date: '`r Sys.Date()`'
 slug: erbb2-toxicity-screening
+draft: true
 categories:
   - Bioinformatics
   - Target Discovery

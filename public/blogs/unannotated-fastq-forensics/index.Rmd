@@ -64,7 +64,7 @@ You can try it out immediately. The repository includes an automated script to f
 
 ``` bash
 # Clone the repository
-git clone [https://github.com/yigewu/SeqSniffer.git](https://github.com/yigewu/SeqSniffer.git)
+git clone https://github.com/yigewu/SeqSniffer.git
 cd SeqSniffer
 
 # Create the environment and fetch test data
