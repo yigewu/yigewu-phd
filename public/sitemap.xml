@@ -3,13 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:4321/categories/bioinformatics/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/blogs/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/categories/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/erbb2/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/proteomics/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/categories/target-discovery/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/blogs/erbb2-toxicity-screening/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/toxicity/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/transcriptomics/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/</loc>
+    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/categories/data-engineering/</loc>
     <lastmod>2026-02-17T00:00:00+00:00</lastmod>
@@ -24,12 +48,6 @@
     <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/tags/rna-seq/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/</loc>
     <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/blogs/2025-12-09-obsidian-plugin/</loc>

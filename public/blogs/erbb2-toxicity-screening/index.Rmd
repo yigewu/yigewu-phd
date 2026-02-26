@@ -1,0 +1,43 @@
+---
+title: "The Trap of 1D Target Screening: Why Abundance Doesn't Predict Toxicity"
+date: '`r Sys.Date()`'
+slug: erbb2-toxicity-screening
+categories:
+  - Bioinformatics
+  - Target Discovery
+tags:
+  - ERBB2
+  - Transcriptomics
+  - Proteomics
+  - Toxicity
+---
+
+### The Challenge
+
+During a recent technical discussion regarding on-target, off-tumor toxicity, we evaluated *ERBB2* (HER2) as a case study. The standard practice in bioinformatics is to screen out targets with high normal-tissue expression using databases like GTEx (for RNA) or the Human Protein Atlas (for Protein). 
+
+However, looking at the GTEx RNA-seq data, *ERBB2* is highly abundant in the gastrointestinal tract (esophagus) and urinary bladder. Yet, the most famous, dose-limiting toxicities for HER2-targeted therapies (like Trastuzumab) are Cardiotoxicity and Interstitial Lung Disease (ILD)—tissues with comparatively unremarkable baseline RNA expression.
+
+![Figure 1: ERBB2 RNA Expression Across Normal Tissues. This bar chart, adapted from the Human Protein Atlas consensus dataset, shows normalized transcript per million (nTPM) values for ERBB2. Note the highest expression in the esophagus and kidney, with unremarkable levels in the heart muscle and lung.](/images/projects/erbb2_rna_expression_hpa.png)
+
+### The Insight: Abundance Does Not Equal Essentiality
+
+A common hypothesis is that post-transcriptional regulation causes this discrepancy, and that checking the protein-level data will resolve it. But evaluating the mass-spectrometry/IHC data reveals a different story: protein expression for *ERBB2* is broadly "Medium" across many healthy tissues that never suffer severe toxicity. 
+
+![Figure 2: ERBB2 Protein Expression Across Normal Tissues. This overview from the Human Protein Atlas scores protein expression levels (Not detected, Low, Medium, High) based on immunohistochemistry. While showing functional protein in the heart and lung, it also indicates "Medium" expression in many tissues that do not suffer severe clinical toxicity, demonstrating that protein abundance alone is not a precise predictor of functional dependency.](/images/projects/erbb2_protein_expression_hpa.png)
+
+The missing variable isn't the *modality* of the data (RNA vs. Protein); it is the **biological context**. 
+
+Toxicity is driven by **functional dependency**, not just target density. In the adult heart, ERBB2 acts as a critical co-receptor in the Neuregulin-1 (NRG-1) signaling pathway. Cardiomyocytes rely heavily on this exact pathway to survive physiological and oxidative stress. Blocking it removes their primary survival lifeline, leading to apoptosis and heart failure. 
+
+The esophagus might have a higher absolute abundance of ERBB2 protein, but its cells do not rely on it as an exclusive survival mechanism the way the heart does.
+
+### The Computational Solution
+
+We cannot predict drug safety simply by setting a maximum expression threshold (a "cutoff") in GTEx or CPTAC. To truly predict off-tumor effects for CAR-Ts and ADCs, our computational pipelines must move from 1D expression screening to multidimensional dependency screening. 
+
+We must integrate normal tissue expression data with:
+1.  **Tissue-specific Protein-Protein Interaction (PPI) networks.**
+2.  **Cell-type specific survival pathway analysis** (matching target expression to known stress-response pathways in essential organs).
+
+By mapping both *where* a target is expressed and *how much the tissue relies on it*, we can avoid clinical surprises that basic abundance metrics miss.
