@@ -42,7 +42,7 @@ By mapping a subset of reads exclusively against a lightweight transcriptome FAS
 | Metric | WGS DNA-seq | RNA-seq |
 |:-----------------------|:-----------------------|:-----------------------|
 | **Target Reference** | 3GB Full Genome | \~35MB Protein-Coding Transcriptome |
-| **Mapping Rate** | **\< 30%** (Noise floor) | **\> 60%** (Target signal) |
+| **Mapping Rate** | **\< 30%** (Noise floor) | **\> 50%** (Target signal) |
 
 ------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ I suspected the issue was **Transcriptome Bloat**. Standard transcriptome refere
 
 ## The Open-Source Solution: SeqSniffer
 
-To automate this pipeline, I built **SeqSniffer**—a fast, open-source CLI tool that streams `minimap2` alignments directly into memory. It classifies FASTQ files in seconds without writing heavy temporary files to your disk.
+To automate this pipeline, I built **SeqSniffer**—a fast, open-source CLI tool that streams `minimap2` alignments directly into memory. It classifies FASTQ files in seconds without writing heavy temporary files to your disk. The full source code, installation guide, and empirical validation data are available on the [SeqSniffer GitHub repository](https://github.com/yigewu/SeqSniffer).
 
 You can try it out immediately. The repository includes an automated script to fetch the highly optimized protein-coding reference and public test data.
 
@@ -75,3 +75,8 @@ conda activate seqsniffer
 # Sniff your files
 ./seqsniffer.py --input test_data/test_dna.fastq --ref test_data/transcriptome.fa
 ```
+
+## Closing the Loop on Data Integrity
+In a "maximalist" diagnostic environment, the bottleneck is rarely a lack of data; it is the noise introduced by unannotated or mislabeled assets. This heuristic demonstrates that effective bioinformatics engineering doesn't always require the heaviest algorithm—it requires asking the right question of the right reference.
+
+By automating these "sanity checks" into the early stages of a pipeline, we ensure that the complex downstream multi-omic profiling—DNA, RNA, and protein—is built on a foundation of ground-truth data.

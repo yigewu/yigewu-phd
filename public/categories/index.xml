@@ -2,38 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Yige Wu, PhD</title>
-    <link>https://yigewu-phd.netlify.app/categories/</link>
+    <link>http://localhost:4321/categories/</link>
     <description>Recent content in Categories on Yige Wu, PhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://yigewu-phd.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bioinformatics</title>
-      <link>https://yigewu-phd.netlify.app/categories/bioinformatics/</link>
+      <link>http://localhost:4321/categories/bioinformatics/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://yigewu-phd.netlify.app/categories/bioinformatics/</guid>
+      <guid>http://localhost:4321/categories/bioinformatics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Engineering</title>
+      <link>http://localhost:4321/categories/data-engineering/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/categories/data-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Precision Oncology</title>
-      <link>https://yigewu-phd.netlify.app/categories/precision-oncology/</link>
+      <link>http://localhost:4321/categories/precision-oncology/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://yigewu-phd.netlify.app/categories/precision-oncology/</guid>
+      <guid>http://localhost:4321/categories/precision-oncology/</guid>
       <description></description>
     </item>
     <item>
       <title>Target Discovery</title>
-      <link>https://yigewu-phd.netlify.app/categories/target-discovery/</link>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://yigewu-phd.netlify.app/categories/target-discovery/</guid>
+      <link>http://localhost:4321/categories/target-discovery/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/categories/target-discovery/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>https://yigewu-phd.netlify.app/categories/r/</link>
+      <link>http://localhost:4321/categories/r/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://yigewu-phd.netlify.app/categories/r/</guid>
+      <guid>http://localhost:4321/categories/r/</guid>
       <description></description>
     </item>
   </channel>

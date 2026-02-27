@@ -2,88 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yigewu-phd.netlify.app/categories/bioinformatics/</loc>
+    <loc>http://localhost:4321/categories/bioinformatics/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/</loc>
+    <loc>http://localhost:4321/blogs/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/categories/</loc>
+    <loc>http://localhost:4321/categories/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/data-integration/</loc>
+    <loc>http://localhost:4321/tags/cli-tools/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/n1/</loc>
+    <loc>http://localhost:4321/categories/data-engineering/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/categories/precision-oncology/</loc>
+    <loc>http://localhost:4321/tags/data-integration/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/rna-seq/</loc>
+    <loc>http://localhost:4321/tags/dna-seq/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/</loc>
+    <loc>http://localhost:4321/tags/erbb2/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/n1-rank-normalization/</loc>
+    <loc>http://localhost:4321/blogs/unannotated-fastq-forensics/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/</loc>
+    <loc>http://localhost:4321/tags/n1/</loc>
     <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/erbb2/</loc>
-    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+    <loc>http://localhost:4321/categories/precision-oncology/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/proteomics/</loc>
-    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+    <loc>http://localhost:4321/tags/proteomics/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/categories/target-discovery/</loc>
-    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+    <loc>http://localhost:4321/tags/qc/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/erbb2-toxicity-screening/</loc>
-    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+    <loc>http://localhost:4321/tags/rna-seq/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/toxicity/</loc>
-    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+    <loc>http://localhost:4321/tags/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/transcriptomics/</loc>
-    <lastmod>2026-02-19T00:00:00+00:00</lastmod>
+    <loc>http://localhost:4321/categories/target-discovery/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/2025-12-09-obsidian-plugin/</loc>
+    <loc>http://localhost:4321/blogs/n1-rank-normalization/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/blogs/erbb2-toxicity-screening/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/toxicity/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/tags/transcriptomics/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:4321/blogs/2025-12-09-obsidian-plugin/</loc>
     <lastmod>2025-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/2025-12-06-kidney-cancer-multi-omics/</loc>
+    <loc>http://localhost:4321/blogs/2025-12-06-kidney-cancer-multi-omics/</loc>
     <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/2025-12-06-combination-therapy-study-in-rcc/</loc>
+    <loc>http://localhost:4321/blogs/2025-12-06-combination-therapy-study-in-rcc/</loc>
     <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/blogs/2025-12-06-variant-calling-pipeline/</loc>
+    <loc>http://localhost:4321/blogs/2025-12-06-variant-calling-pipeline/</loc>
     <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/about/</loc>
+    <loc>http://localhost:4321/about/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/gallery/</loc>
+    <loc>http://localhost:4321/gallery/</loc>
     <lastmod>2022-06-25T18:35:46+05:30</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/post/2020-12-01-r-rmarkdown/</loc>
+    <loc>http://localhost:4321/post/2020-12-01-r-rmarkdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/plot/</loc>
+    <loc>http://localhost:4321/tags/plot/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/post/</loc>
+    <loc>http://localhost:4321/post/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/categories/r/</loc>
+    <loc>http://localhost:4321/categories/r/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/r-markdown/</loc>
+    <loc>http://localhost:4321/tags/r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://yigewu-phd.netlify.app/tags/regression/</loc>
+    <loc>http://localhost:4321/tags/regression/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url>
 </urlset>
