@@ -337,7 +337,11 @@ Forensics on the Filesystem: Identifying Unannotated FASTQ Data | Yige Wu, PhD
 <p>The textbook biological difference is obvious. Whole Genome Sequencing (WGS) DNA covers coding and non-coding regions equally, while RNA-seq derives from mature mRNA. Therefore, RNA-seq should have distinct reads spanning across splice junctions.</p>
 <p>My initial hypothesis was to subsample 100,000 reads, run a fast splice-aware alignment, and parse the resulting CIGAR strings for large <code>N</code> gaps (introns).</p>
 <p>However, when I put this to the test on ground-truth public datasets, the empirical results completely contradicted the theory. The known RNA-seq files showed a dismal splice detection rate (hovering around 1%), while the known WGS DNA files sometimes showed an artificially <em>higher</em> splice rate (over 5% depending on the filtering parameters).</p>
-<p>While I haven&rsquo;t rigorously profiled the underlying C++ mechanics of the aligner to prove this, I strongly suspect this failure stems from two computational realities of short-read <em>de novo</em> alignment: * <strong>Hypothesis 1: The RNA Soft-Clipping Penalty.</strong> It is highly probable that fast aligners mapping 100-bp reads mathematically prefer to &ldquo;soft-clip&rdquo; the ends of a read rather than open a massive intronic gap, hiding the true splice signal entirely. * <strong>Hypothesis 2: The DNA Hallucination.</strong> When WGS DNA is forced into a splice-aware alignment without a restrictive annotation file, the algorithm likely searches desperately for homology. It may &ldquo;hallucinate&rdquo; massive gaps to force off-target repeats and pseudogenes to map, creating a high false-positive splice rate.</p>
+<p>While I haven&rsquo;t rigorously profiled the underlying C++ mechanics of the aligner to prove this, I strongly suspect this failure stems from two computational realities of short-read <em>de novo</em> alignment:</p>
+<ul>
+<li><strong>Hypothesis 1: The RNA Soft-Clipping Penalty.</strong> It is highly probable that fast aligners mapping 100-bp reads mathematically prefer to &ldquo;soft-clip&rdquo; the ends of a read rather than open a massive intronic gap, hiding the true splice signal entirely.</li>
+<li><strong>Hypothesis 2: The DNA Hallucination.</strong> When WGS DNA is forced into a splice-aware alignment without a restrictive annotation file, the algorithm likely searches desperately for homology. It may &ldquo;hallucinate&rdquo; massive gaps to force off-target repeats and pseudogenes to map, creating a high false-positive splice rate.</li>
+</ul>
 <hr>
 <h2 id="the-pivot-the-transcriptome-mapping-rate">The Pivot: The Transcriptome Mapping Rate</h2>
 <p>Since parsing CIGAR strings proved computationally unreliable for this use case, I pivoted to a more robust heuristic: measuring <em>where</em> reads map, rather than <em>how</em> they map.</p>
@@ -364,10 +368,10 @@ Forensics on the Filesystem: Identifying Unannotated FASTQ Data | Yige Wu, PhD
   </tbody>
 </table>
 <hr>
-<h2 id="the-battle-scars-empirical-validation">The &ldquo;Battle Scars&rdquo;: Empirical Validation</h2>
+<h2 id="empirical-validation">Empirical Validation</h2>
 <p>Theory is great, but biology is messy. During initial empirical validation using Cancer Cell Line Encyclopedia (CCLE) datasets, I ran into a significant anomaly: WGS mapping rates for aneuploid cancer cell lines were spiking to nearly 50%.</p>
 <p>I suspected the issue was <strong>Transcriptome Bloat</strong>. Standard transcriptome references (like GENCODE&rsquo;s comprehensive release) contain tens of thousands of long non-coding RNAs (lncRNAs) and transcripts with retained introns. My working hypothesis was that the highly amplified, shattered genomes of the CCLE cell lines were flooding these non-coding reference regions.</p>
-<p><strong>The Fix:</strong> To test this theory, I restricted the reference strictly to the <strong>Protein-Coding Transcriptome</strong>. The result confirmed the approach: the WGS noise floor instantly collapsed back down to the 15% - 25% range, while the RNA-seq target signal remained strong at &gt; 60%. This created a robust, undeniable classification canyon.</p>
+<p><strong>The Fix:</strong> I restricted the reference strictly to the <strong>Protein-Coding Transcriptome</strong>. The result confirmed the approach: the WGS noise floor instantly collapsed back down to the 15% - 25% range, while the RNA-seq target signal remained strong at &gt; 60%. This created a robust, undeniable classification canyon.</p>
 <hr>
 <h2 id="the-open-source-solution-seqsniffer">The Open-Source Solution: SeqSniffer</h2>
 <p>To automate this pipeline, I built <strong>SeqSniffer</strong>—a fast, open-source CLI tool that streams <code>minimap2</code> alignments directly into memory. It classifies FASTQ files in seconds without writing heavy temporary files to your disk. The full source code, installation guide, and empirical validation data are available on the <a href="https://github.com/yigewu/SeqSniffer">SeqSniffer GitHub repository</a>.</p>
@@ -403,7 +407,7 @@ Forensics on the Filesystem: Identifying Unannotated FASTQ Data | Yige Wu, PhD
     <li><a href="#the-challenge">The Challenge</a></li>
     <li><a href="#the-naive-assumption-the-splice-trap">The Naive Assumption: The &ldquo;Splice&rdquo; Trap</a></li>
     <li><a href="#the-pivot-the-transcriptome-mapping-rate">The Pivot: The Transcriptome Mapping Rate</a></li>
-    <li><a href="#the-battle-scars-empirical-validation">The &ldquo;Battle Scars&rdquo;: Empirical Validation</a></li>
+    <li><a href="#empirical-validation">Empirical Validation</a></li>
     <li><a href="#the-open-source-solution-seqsniffer">The Open-Source Solution: SeqSniffer</a></li>
     <li><a href="#closing-the-loop-on-data-integrity">Closing the Loop on Data Integrity</a></li>
   </ul>

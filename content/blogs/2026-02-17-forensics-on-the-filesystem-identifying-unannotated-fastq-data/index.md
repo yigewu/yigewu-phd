@@ -29,7 +29,9 @@ My initial hypothesis was to subsample 100,000 reads, run a fast splice-aware al
 
 However, when I put this to the test on ground-truth public datasets, the empirical results completely contradicted the theory. The known RNA-seq files showed a dismal splice detection rate (hovering around 1%), while the known WGS DNA files sometimes showed an artificially *higher* splice rate (over 5% depending on the filtering parameters).
 
-While I haven't rigorously profiled the underlying C++ mechanics of the aligner to prove this, I strongly suspect this failure stems from two computational realities of short-read *de novo* alignment: \* **Hypothesis 1: The RNA Soft-Clipping Penalty.** It is highly probable that fast aligners mapping 100-bp reads mathematically prefer to "soft-clip" the ends of a read rather than open a massive intronic gap, hiding the true splice signal entirely. \* **Hypothesis 2: The DNA Hallucination.** When WGS DNA is forced into a splice-aware alignment without a restrictive annotation file, the algorithm likely searches desperately for homology. It may "hallucinate" massive gaps to force off-target repeats and pseudogenes to map, creating a high false-positive splice rate.
+While I haven't rigorously profiled the underlying C++ mechanics of the aligner to prove this, I strongly suspect this failure stems from two computational realities of short-read *de novo* alignment: 
+- **Hypothesis 1: The RNA Soft-Clipping Penalty.** It is highly probable that fast aligners mapping 100-bp reads mathematically prefer to "soft-clip" the ends of a read rather than open a massive intronic gap, hiding the true splice signal entirely. 
+- **Hypothesis 2: The DNA Hallucination.** When WGS DNA is forced into a splice-aware alignment without a restrictive annotation file, the algorithm likely searches desperately for homology. It may "hallucinate" massive gaps to force off-target repeats and pseudogenes to map, creating a high false-positive splice rate.
 
 ------------------------------------------------------------------------
 
@@ -46,13 +48,13 @@ By mapping a subset of reads exclusively against a lightweight transcriptome FAS
 
 ------------------------------------------------------------------------
 
-## The "Battle Scars": Empirical Validation
+## Empirical Validation
 
 Theory is great, but biology is messy. During initial empirical validation using Cancer Cell Line Encyclopedia (CCLE) datasets, I ran into a significant anomaly: WGS mapping rates for aneuploid cancer cell lines were spiking to nearly 50%.
 
 I suspected the issue was **Transcriptome Bloat**. Standard transcriptome references (like GENCODE's comprehensive release) contain tens of thousands of long non-coding RNAs (lncRNAs) and transcripts with retained introns. My working hypothesis was that the highly amplified, shattered genomes of the CCLE cell lines were flooding these non-coding reference regions.
 
-**The Fix:** To test this theory, I restricted the reference strictly to the **Protein-Coding Transcriptome**. The result confirmed the approach: the WGS noise floor instantly collapsed back down to the 15% - 25% range, while the RNA-seq target signal remained strong at \> 60%. This created a robust, undeniable classification canyon.
+**The Fix:** I restricted the reference strictly to the **Protein-Coding Transcriptome**. The result confirmed the approach: the WGS noise floor instantly collapsed back down to the 15% - 25% range, while the RNA-seq target signal remained strong at \> 60%. This created a robust, undeniable classification canyon.
 
 ------------------------------------------------------------------------
 
